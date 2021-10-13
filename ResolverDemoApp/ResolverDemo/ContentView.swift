@@ -25,21 +25,6 @@ struct ContentView: View {
                         viewModel.incrementDeveloperSettingsOption()
                     }
             )
-            .alert(
-                isPresented: $viewModel.showingAlert,
-                content: {
-                    Alert(
-                        title: Text("You are now in Developer Mode"),
-                        message: nil,
-                        dismissButton: .default(
-                            Text("OK"),
-                            action: {
-                                viewModel.showingAlert = false
-                            }
-                        )
-                    )
-                }
-            )
         Button(
             "Swap Cameras",
             action: {

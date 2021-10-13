@@ -13,7 +13,6 @@ import Resolver
 class ContentViewModel {
     @Injected private var environment: Environment
     @Injected private var videoCapture: VideoCapture
-    @Published var showingAlert = false
     
     private var environmentSubscription: AnyCancellable?
     
@@ -23,7 +22,8 @@ class ContentViewModel {
         guard environmentSubscription == nil else { return }
         environmentSubscription = environment.environmentDidChange.sink(receiveValue: { environmentType in
             if environmentType == .development {
-                self.showingAlert = true
+                // Notify Users here
+                print("Developer Options Now Available")
             }
         })
     }
