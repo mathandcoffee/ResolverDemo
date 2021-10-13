@@ -11,8 +11,8 @@ import Combine
 import Resolver
 
 class ContentViewModel {
-    @Injected var environment: Environment
-    @Published var showingAlert = false
+    @Injected private var environment: Environment
+    @Injected private var videoCapture: VideoCapture
     
     private var environmentSubscription: AnyCancellable?
     
@@ -22,7 +22,8 @@ class ContentViewModel {
         guard environmentSubscription == nil else { return }
         environmentSubscription = environment.environmentDidChange.sink(receiveValue: { environmentType in
             if environmentType == .development {
-                self.showingAlert = true
+                // Notify Users here
+                print("Developer Options Now Available")
             }
         })
     }
@@ -33,5 +34,9 @@ class ContentViewModel {
         if taps == 10 {
             environment.environmentType = .development
         }
+    }
+    
+    func swapCameras() {
+        videoCapture.swapCameras()
     }
 }

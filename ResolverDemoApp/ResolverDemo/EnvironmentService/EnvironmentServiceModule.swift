@@ -39,15 +39,8 @@ fileprivate class EnvironmentImpl: Environment {
 
 struct EnvironmentServiceModule: RegistrationModule {
     static func register() {
-        #if DEBUG
-        let isDebug = true
-        #else
-        let isDebug = false
-        #endif
-
-        let buildType: BuildType = isDebug ? .debug : .release
         Resolver.register {
-            EnvironmentImpl(buildType: buildType) as Environment
+            EnvironmentImpl(buildType: .release) as Environment
         }.scope(.cached)
     }
 }

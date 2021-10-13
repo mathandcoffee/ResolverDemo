@@ -17,6 +17,8 @@
 		78C675C427172CF20048C4B5 /* RegistrationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C675C327172CF20048C4B5 /* RegistrationModule.swift */; };
 		78C675C627172DF90048C4B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C675C527172DF90048C4B5 /* AppDelegate.swift */; };
 		78C675C827172E810048C4B5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C675C727172E810048C4B5 /* ContentViewModel.swift */; };
+		78DA466C271752BD00B6CB33 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA466B271752BD00B6CB33 /* VideoCapture.swift */; };
+		78DA466E2717538200B6CB33 /* VideoCaptureModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DA466D2717538200B6CB33 /* VideoCaptureModule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		78C675C327172CF20048C4B5 /* RegistrationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModule.swift; sourceTree = "<group>"; };
 		78C675C527172DF90048C4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C675C727172E810048C4B5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		78DA466B271752BD00B6CB33 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		78DA466D2717538200B6CB33 /* VideoCaptureModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureModule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		78C675AA2717296B0048C4B5 /* ResolverDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78DA466A271752AD00B6CB33 /* VideoCapture */,
 				78C675C227172CD90048C4B5 /* Resolver */,
 				78C675BA271729B20048C4B5 /* EnvironmentService */,
 				78C675AB2717296B0048C4B5 /* ResolverDemoApp.swift */,
@@ -100,6 +105,15 @@
 				78C675C327172CF20048C4B5 /* RegistrationModule.swift */,
 			);
 			path = Resolver;
+			sourceTree = "<group>";
+		};
+		78DA466A271752AD00B6CB33 /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				78DA466B271752BD00B6CB33 /* VideoCapture.swift */,
+				78DA466D2717538200B6CB33 /* VideoCaptureModule.swift */,
+			);
+			path = VideoCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DA466C271752BD00B6CB33 /* VideoCapture.swift in Sources */,
 				78C675C627172DF90048C4B5 /* AppDelegate.swift in Sources */,
 				78C675C427172CF20048C4B5 /* RegistrationModule.swift in Sources */,
 				78C675AE2717296B0048C4B5 /* ContentView.swift in Sources */,
@@ -184,6 +199,7 @@
 				78C675C127172B320048C4B5 /* EnvironmentServiceModule.swift in Sources */,
 				78C675AC2717296B0048C4B5 /* ResolverDemoApp.swift in Sources */,
 				78C675BC271729CC0048C4B5 /* Environment.swift in Sources */,
+				78DA466E2717538200B6CB33 /* VideoCaptureModule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
