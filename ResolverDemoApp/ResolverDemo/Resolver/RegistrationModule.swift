@@ -10,7 +10,3 @@ import Foundation
 protocol RegistrationModule {
     static func register()
 }
-
-extension RegistrationModule {
-    init() { fatalError("You Should Never Initialize a Module") }
-}

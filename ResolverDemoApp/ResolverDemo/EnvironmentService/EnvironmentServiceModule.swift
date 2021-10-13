@@ -9,7 +9,6 @@ import Foundation
 import Combine
 import Resolver
 
-
 fileprivate class EnvironmentImpl: Environment {
     
     init(buildType: BuildType) {
@@ -38,6 +37,9 @@ fileprivate class EnvironmentImpl: Environment {
 }
 
 struct EnvironmentServiceModule: RegistrationModule {
+    
+    private init() { fatalError("You Should Never Initialize a Module") }
+    
     static func register() {
         Resolver.register {
             EnvironmentImpl(buildType: .release) as Environment

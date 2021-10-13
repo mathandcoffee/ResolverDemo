@@ -41,6 +41,9 @@ fileprivate class VideoCaptureImpl: VideoCapture {
 }
 
 struct VideoCaptureModule: RegistrationModule {
+    
+    private init() { fatalError("You Should Never Initialize a Module") }
+    
     static func register() {
         Resolver.register {
             VideoCaptureImpl() as VideoCapture
