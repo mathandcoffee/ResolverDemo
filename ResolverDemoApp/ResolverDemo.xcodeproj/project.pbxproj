@@ -49,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		78ADD82D272220D5001CC7E3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				78C675C727172E810048C4B5 /* ContentViewModel.swift */,
+				78C675AD2717296B0048C4B5 /* ContentView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		78C6759F2717296B0048C4B5 = {
 			isa = PBXGroup;
 			children = (
@@ -68,16 +77,15 @@
 		78C675AA2717296B0048C4B5 /* ResolverDemo */ = {
 			isa = PBXGroup;
 			children = (
+				78ADD82D272220D5001CC7E3 /* UI */,
 				78DA466A271752AD00B6CB33 /* VideoCapture */,
 				78C675C227172CD90048C4B5 /* Resolver */,
 				78C675BA271729B20048C4B5 /* EnvironmentService */,
 				78C675AB2717296B0048C4B5 /* ResolverDemoApp.swift */,
-				78C675AD2717296B0048C4B5 /* ContentView.swift */,
 				78C675AF2717296B0048C4B5 /* Assets.xcassets */,
 				78C675B42717296B0048C4B5 /* Info.plist */,
 				78C675B12717296B0048C4B5 /* Preview Content */,
 				78C675C527172DF90048C4B5 /* AppDelegate.swift */,
-				78C675C727172E810048C4B5 /* ContentViewModel.swift */,
 			);
 			path = ResolverDemo;
 			sourceTree = "<group>";

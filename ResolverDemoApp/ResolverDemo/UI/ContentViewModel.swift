@@ -10,19 +10,18 @@ import SwiftUI
 import Combine
 import Resolver
 
-class ContentViewModel {
+class ContentViewModel: ObservableObject {
     @Injected private var environment: Environment
     @Injected private var videoCapture: VideoCapture
     
     private var environmentSubscription: AnyCancellable?
     
-    private var taps = 0
+    @Published private(set) var taps = 0
     
     func subscribe() {
         guard environmentSubscription == nil else { return }
         environmentSubscription = environment.environmentDidChange.sink(receiveValue: { environmentType in
             if environmentType == .development {
-                // Notify Users here
                 print("Developer Options Now Available")
             }
         })
